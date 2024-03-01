@@ -1,0 +1,75 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/">Back</a>
+<h2 class="d-flex justify-content-center">Lập báo cáo theo ngày</h2>
+
+<div class="menu">
+    <form method="post" action="/report/daily-report">
+        <div class="row align-items-start">
+            <div class="d-flex justify-content-center">
+                    <label for="defaultDate" class="dateReport" id="basic-addon1">Date</label>
+                <input id="date" name="date" type="date">
+            </div>
+
+            <div class="d-flex justify-content-center" style="margin-top: 10px">
+                <button type="submit" class="btn btn-success report" name="dailyreport" id="dailyreport">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    #menu {
+        width: 100%;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        border: 2px solid #000;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #000;
+        cursor: pointer;
+        transition: color 0.4s linear;
+        position: relative;
+    }
+
+    a:hover {
+        color: #000;
+    }
+
+    li:hover {
+        background-color: #ccc;
+    }
+</style>
+<script>
+  var currentDate = new Date();
+
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0, nên cần cộng thêm 1
+  var year = currentDate.getFullYear();
+
+  var formattedDate = year + '-' + (month < 10 ? '0' + month : month) + '-' + (day < 10 ? '0' + day : day);
+
+  document.getElementById('date').value = formattedDate;
+</script>

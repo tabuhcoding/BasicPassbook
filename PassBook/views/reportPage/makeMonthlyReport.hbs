@@ -1,0 +1,40 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/">Back</a>
+<h2 class="d-flex justify-content-center">Lập báo cáo theo tháng</h2>
+
+<div class="menu">
+    <form method="post" action="/report/monthly-report">
+        <div class="row align-items-start">
+            <div class="d-flex justify-content-center">
+                <label for="defaultMonth" class="monthReport" id="basic-addon1">Month</label>
+                <input id="month" name="month" type="month">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="dropdown">
+                    <label for="typePassbook">Type of passbook</label>
+                    <select id="type" name="type" class="form-control" id="term">
+                        <option value="Demand">Demand</option>
+                        {{#each termData}}
+                        <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success report" name="monthlyreport" id="monthlyreport">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    var currentDate = new Date();
+
+    var month = currentDate.getMonth() + 1; 
+    var year = currentDate.getFullYear();
+
+    var formattedMonth = year + '-' + (month < 10 ? '0' + month : month);
+    document.getElementById('month').value = formattedMonth;
+</script>

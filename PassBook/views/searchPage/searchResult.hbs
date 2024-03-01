@@ -1,0 +1,37 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/">Back</a>
+<h2 class="d-flex justify-content-center">Tra cứu sổ</h2>
+
+<div class="col-md-8 offset-md-2">
+    <div class="card mb-3">
+        <div class="card-body">
+            <p class="card-text">CustomerID: {{customerID}}</p>
+            <p class="card-text">Fullname: {{fullname}}</p>
+            <table class="table table-striped table-hover table-bordered">
+                <thead> 
+                    <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Passbook ID</th>
+                    <th scope="col">Type of passbook</th>
+                    <th scope="col">OpenDate</th>
+                    <th scope="col">Balance</th>
+                    <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each passbooks}}
+                    <tr>
+                        <th scope="row">{{@index}}</th>
+                        <td>{{passbook_ID}}</td>
+                        <td>{{type}}</td>
+                        <td>{{formattedDate}}</td>
+                        <td>{{balance}}</td>
+                        <td>{{status}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

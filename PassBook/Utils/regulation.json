@@ -1,0 +1,50 @@
+{
+  "REGULATION": {
+    "MIN_DEPOSIT": 80,
+    "MIN_DEPOSIT_LAST": 150,
+    "MIN_DEPOSIT_LAST_DATE": "2024-01-04",
+    "MIN_TO_WITHDRAWAL": 15,
+    "MIN_TO_WITHDRAWAL_LAST": 30,
+    "MIN_TO_WITHDRAWAL_LAST_DATE": "2024-01-04",
+    "TERM": [
+      {
+        "TERMS": "6 months",
+        "RATE": 2,
+        "LASTRATE": 0.5,
+        "LASTRATEDATE": "2024-01-03"
+      },
+      {
+        "TERMS": "3 months",
+        "RATE": 0.55,
+        "LASTRATE": 0.75,
+        "LASTRATEDATE": "2024-01-04"
+      }
+    ],
+    "DELETED_TERM": [
+      {
+        "TERMS": "2 months",
+        "RATE": 0.7,
+        "LASTRATE": 0.55,
+        "LASTRATEDATE": "2024-01-03"
+      },
+      {
+        "TERMS": "7 months",
+        "RATE": 0.6,
+        "LASTRATE": 0.6,
+        "LASTRATEDATE": "2024-01-04"
+      },
+      {
+        "TERMS": "3 months",
+        "RATE": 0.7,
+        "LASTRATE": 0.55,
+        "LASTRATEDATE": "2024-01-03"
+      }
+    ],
+    "DEMAND_RATE": 0.15,
+    "DEMAND_LASTRATE": 0.15,
+    "DEMAND_LASTRATEDATE": "2024-01-04",
+    "MIN_TO_GET_RATE": 30,
+    "MIN_TO_GET_RATE_LAST": 30,
+    "MIN_TO_GET_RATE_LAST_DATE": ""
+  }
+}

@@ -1,0 +1,45 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/report">Back</a>
+<h2 class="d-flex justify-content-center">Lập báo cáo theo ngày</h2>
+
+<div class="menu">
+    <h3>Date: {{date}}</h3>
+    <table class="table table-striped table-hover table-bordered" style="margin: 0 auto;">
+        <thead> 
+            <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Type of passbook</th>
+            <th scope="col">Total revenue</th>
+            <th scope="col">Total expense</th>
+            <th scope="col">Difference</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each dailyReport}}
+            <tr>
+                <td scope="row">{{addOne @index}}</td>
+                <td>{{type}}</td>
+                <td>{{revenue}}</td>
+                <td>{{expense}}</td>
+                <td>{{difference}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

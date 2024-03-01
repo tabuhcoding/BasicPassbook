@@ -1,0 +1,78 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+<h2 class="d-flex justify-content-center">Menu</h2>
+
+<div id="menu">
+    <div class="container text-center">
+        <ul class="row align-items-start">
+            <li class="col">
+                <a href="/openPassbook">Mở sổ tiết kiệm</a>
+            </li>
+            <li class="col">
+                <a href="/service/makeWithdrawal">Lập phiếu rút tiền</a>
+            </li>
+            <li class="col">
+                <a href="/service/makeDeposit">Lập phiếu gửi tiền</a>
+            </li>
+        </ul>
+        <ul class="row align-items-start">
+            <li class="col">
+                <a class="menu-link" href="/searchPassbook">Tra cứu sổ</a>
+            </li>
+            <li class="col">
+                <a class="menu-link" href="/report">Lập báo cáo</a>
+            </li>
+            <li class="col">
+                <a class="menu-link" href="/regulation">Thay đổi quy định</a>
+            </li>
+        </ul>
+        <form method="post" action="/importData">
+            <button type="submit" class="btn btn-primary">Nhập dữ liệu bảng</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    #menu {
+        width: 100%;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        border: 2px solid #000;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: #000;
+        cursor: pointer;
+        transition: color 0.4s linear;
+        position: relative;
+    }
+
+    a:hover {
+        color: #000;
+    }
+
+    li:hover {
+        background-color: #ccc;
+    }
+</style>

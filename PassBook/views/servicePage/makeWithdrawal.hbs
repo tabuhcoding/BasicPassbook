@@ -1,0 +1,55 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/">Back</a>
+<h2 class="d-flex justify-content-center">Lập phiếu rút tiền</h2>
+
+<div class="menu">
+    <form method="post" action="/service/makeWithdrawal">
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Passbook ID</span>
+                    <input name="passbookID" type="text" class="form-control" placeholder="Passbook ID"
+                        aria-label="Passbook ID" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Customer ID</span>
+                    <input name="customerID" type="text" class="form-control" placeholder="Customer ID"
+                        aria-label="Customer ID" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Amount of money</span>
+                    <input name="amount" type="number" class="form-control" placeholder="" aria-label=""
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <label for="defaultDate" class="input-group-text" id="basic-addon1">Withdrawal date</label>
+                    <input name="defaultDate" type="date" class="ssform-control" placeholder="Date" aria-label="Date"
+                        id="defaultDate" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+</div>
+<script>
+  var currentDate = new Date();
+
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0, nên cần cộng thêm 1
+  var year = currentDate.getFullYear();
+
+  var formattedDate = year + '-' + (month < 10 ? '0' + month : month) + '-' + (day < 10 ? '0' + day : day);
+
+  document.getElementById('defaultDate').value = formattedDate;
+</script>

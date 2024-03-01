@@ -1,0 +1,48 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/report">Back</a>
+<h2 class="d-flex justify-content-center">Lập báo cáo theo tháng</h2>
+
+<div class="menu">
+    <table class="table table-striped table-hover table-bordered" >
+        <thead> 
+            <tr>
+                <th colspan="3">Type of passbook: {{type}}</th>
+                <th colspan="2">Month: {{month}}</th>
+            </tr>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Date</th>
+                <th scope="col">Opened books</th>
+                <th scope="col">Closed books</th>
+                <th scope="col">Difference amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each monthlyReport}}
+            <tr>
+                <td scope="row">{{addOne @index}}</td>
+                <td>{{date}}</td>
+                <td>{{open}}</td>
+                <td>{{close}}</td>
+                <td>{{diff}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

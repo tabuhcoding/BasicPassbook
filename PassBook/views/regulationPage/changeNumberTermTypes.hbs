@@ -1,0 +1,53 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/regulation">Back</a>
+<h2 class="d-flex justify-content-center">Thay đổi quy định</h2>
+<h3 class="d-flex justify-content-center">Add new term</h3>
+<div class="container" id="app">
+    <form method="post" action="/regulation/addTerm">
+        <div class="row py-2">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">New Term</span>
+                    <input name="newTerm" type="text" class="form-control" placeholder="New Term"
+                                aria-label="new Term" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2">Interest Rate</span>
+                        <input name="interestRate" type="text" class="form-control" placeholder="Interest Rate"
+                                aria-label="Interest Rate" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                {{#if addMessage}}
+                    <div class="col-12 d-flex justify-content-center" id="form-message">{{addMessage}}</div>
+                {{/if}}
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Add</button>
+                </div>
+        </div>
+    </form>
+    <form method="post" action="/regulation/removeTerm">
+    <h3 class="d-flex justify-content-center">Remove one term</h3>
+    <div class="row py-2">
+                <div class="col-md-6 offset-md-3">
+                    <div class="dropdown input-group mb-3">
+                        <span class="input-group-text">Term to delete:</span>
+                        <select name="deleteTerm" class="form-control" id="balanceRange">
+                        <option value="" selected></option>
+                        {{#each types}}
+                            <option value="{{this}}">{{this}}</option>
+                        {{/each}}                      
+                    </select>
+                    </div>
+                </div>
+                    {{#if removeMessage}}
+                        <div class="col-12 d-flex justify-content-center" id="form-message">{{removeMessage}}</div>
+                    {{/if}}
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">Remove</button>
+                </div>
+        </div>
+    </form>
+</div>

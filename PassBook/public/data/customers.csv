@@ -1,0 +1,201 @@
+Customer_ID,Name,Address,Phone,IdentityNumber
+CUST001,Amanda Norris,"2528 Williams Mall
+New Robert, CO 89896",0213804298,407202
+CUST002,Lisa Beard,"13847 Jessica Route Apt. 592
+North Daniel, UT 21186",0954267233,608941
+CUST003,David Bruce,"91688 Nicholas Tunnel Suite 405
+Morrisburgh, VT 39896",0161806893,393626
+CUST004,Ann Burch,"7744 Shields Gardens Suite 499
+South Paulland, WY 74154",0148733712,427128
+CUST005,Joe Baker,"05121 Daniel Cliff
+Port David, WI 09983",0364538693,898953
+CUST006,Gregory Dyer,"4686 Frederick Islands
+Kimberlyland, WY 25962",0769543584,329728
+CUST007,David Harper,"067 Molina Plaza
+Keithstad, OH 30255",0395936152,923645
+CUST008,Kathy Cardenas,"83247 Richards Bypass Suite 764
+Jonestown, IA 16631",0155045955,615925
+CUST009,Amber Mclaughlin,"3681 Elliott Gateway Apt. 531
+Jennifertown, IL 30256",0444679354,353036
+CUST010,Kenneth Hamilton,"94001 David Summit
+Erikton, NE 69674",0169287167,211897
+CUST011,Lisa Sloan,"7765 Lopez Curve Apt. 929
+Marissaville, OK 27393",0478440791,996899
+CUST012,John Hernandez,"0827 Carson Square
+Robinsonview, SD 51291",0314131250,999599
+CUST013,Corey Washington,"912 Henry Shoal
+South Jamie, PA 72192",0135197876,593075
+CUST014,Brandon Howell,"252 Day Port
+North Rogerfort, RI 32814",0155944898,297530
+CUST015,James Fitzpatrick,"Unit 3026 Box 4542
+DPO AE 30381",0444488264,795033
+CUST016,Michael Alvarez,"936 Wilson Field
+North Christinaton, RI 03875",0943025722,706357
+CUST017,Mr. Mike Henry,"9819 Dennis Coves
+New Laurie, TX 81175",0806314408,850635
+CUST018,Ronald Ramirez,"10903 Erin Pine Apt. 429
+Thompsonmouth, VA 95111",0196520669,998703
+CUST019,Christopher Evans,"610 Stephen Mission Suite 972
+Edwardsmouth, DC 31166",0669230547,989036
+CUST020,Robert Martin,"86603 Anderson Summit
+West Katiefort, NH 53320",0787443142,544252
+CUST021,Troy Perez,"1963 Sandra Turnpike
+Stephenburgh, KS 65152",0145828704,585420
+CUST022,Bryan Brown,"1185 Burns Stream Apt. 491
+Andersonstad, FL 74247",0181052037,766362
+CUST023,James Warren,"PSC 2242, Box 3617
+APO AP 05217",0514061376,106670
+CUST024,Julie Russell,"91544 Richard Estate
+South Katelyn, MP 72954",0815552278,883430
+CUST025,Robert Riley,"76397 Martinez Roads
+East Theresa, MP 38005",0636409715,420138
+CUST026,James Rice,"77822 Brooks Track
+North Dustin, PW 37204",0938977349,230546
+CUST027,Jennifer Vasquez,"26932 Stanton Mall
+Brianburgh, KS 30121",0173417473,868329
+CUST028,Katelyn Johnson,"8860 White Common
+Geraldbury, ID 51778",0942342833,927344
+CUST029,Jason Gardner,"007 Daniel Wells Suite 360
+Juliafurt, VI 04899",0378365753,257289
+CUST030,Thomas Hodge,"698 Brian Underpass Apt. 287
+Diazmouth, OH 81221",0623723520,496578
+CUST031,John Johnson,"93442 Alexander Dale
+North Stephanieborough, SC 02529",0328155172,800927
+CUST032,Sherry Matthews,"45070 Rachel Shore
+Maciastown, CT 90387",0285405809,989599
+CUST033,Diane Strong,"92706 Alexis Extensions
+Kristinaport, ID 03587",0979772878,204255
+CUST034,Matthew Blevins,"0503 Aguilar Circle
+Lake Christina, AS 50880",0957551292,991825
+CUST035,Shawn Bender,"0088 Daniel Roads Suite 399
+Burtonburgh, AL 56593",0294185918,669784
+CUST036,Rebekah Mcdowell,"876 Kyle Meadow
+South Barbara, MS 00902",0889318201,231729
+CUST037,Thomas Rogers,"416 Estes Turnpike
+Grahamchester, PA 43239",0245370916,515133
+CUST038,John Cook,"9758 Debra Pine Suite 783
+Collinsside, NJ 63216",0961374959,426651
+CUST039,Daniel Knox,"31401 Hernandez Estate
+Marksshire, MH 27905",0642071153,126651
+CUST040,Justin Miller,"USS Trevino
+FPO AE 32720",0580187716,148000
+CUST041,Curtis Jones,"Unit 1486 Box 4277
+DPO AP 89515",0202943356,274911
+CUST042,Timothy Poole,"777 Andrews Roads
+Hardingside, HI 22592",0731103940,774671
+CUST043,Jason Osborne,"USCGC Gonzalez
+FPO AA 70275",0951884832,827697
+CUST044,Melissa Harrison,"USCGC Parks
+FPO AE 25037",0159269821,789405
+CUST045,William Mcdonald,"USNV Levine
+FPO AP 07170",0916441234,158132
+CUST046,Laura Hall,"2872 Cline Track Suite 025
+Arroyobury, SC 04356",0352907399,734619
+CUST047,Sandra Stanley,"699 Rodriguez Prairie
+Port Ashley, SC 48148",0793370099,965047
+CUST048,Samuel Allen,"592 Terry Expressway
+Greenborough, MD 37437",0868818128,855865
+CUST049,Jasmine Vaughn,"430 Rivera Hills
+West Kyle, MA 42373",0218502245,277795
+CUST050,Jeremy Garrison,"31165 Sexton Dale Suite 598
+Lake Angelaport, GU 68030",0876021108,241885
+CUST051,Glenn Martin,"55513 Sarah Gardens Apt. 186
+Collinsshire, GA 36324",0882358677,273685
+CUST052,Mary Jones,"478 Anna Lights Suite 004
+Mannport, LA 56175",0384699018,692037
+CUST053,Sandra Jones,"3702 Smith Drives
+East Beverly, OH 82673",0531928138,652257
+CUST054,Christine Anderson,"53142 Todd Mountains
+North Valerieburgh, IL 62140",0953285980,328554
+CUST055,Hannah Mejia,"52400 Farrell Underpass Suite 490
+North Blakeshire, AS 51925",0527428752,148688
+CUST056,Jennifer Yates,"49097 Gregory Run
+Hollyside, WV 72679",0333888470,685651
+CUST057,Jonathon Carpenter,"816 Klein Fort Suite 320
+Port Brittany, IN 97928",0530939627,249990
+CUST058,Rachel Lucas,"906 Lee Branch
+Lake Debrafurt, AS 99941",0296294770,821179
+CUST059,Alexander Phillips,"USNV Hawkins
+FPO AP 13799",0816265381,768509
+CUST060,Mariah Guerrero,"53897 Grant Burgs Apt. 335
+Jonesview, SD 64560",0419546118,224075
+CUST061,Christina Lawrence,"273 Washington Plain Apt. 693
+Port Joannaberg, FM 30511",0631023064,127863
+CUST062,Daniel Maxwell,"3581 John Falls Suite 965
+West Martha, RI 49493",0674285845,916044
+CUST063,Pamela Flores,"0828 Perez Points
+North Richardfurt, NM 23371",0951457722,404869
+CUST064,Amy Mitchell,"22428 Stephen Mill
+East Matthew, KS 31878",0436705953,595037
+CUST065,Emma Mcgee,"264 Karl Greens Suite 873
+East Shannonland, UT 49937",0163706548,485204
+CUST066,Michelle Jordan,"508 Paula Meadows
+South Jeremy, MI 11938",0348077539,251747
+CUST067,Danielle Moore,"296 Kim Corners Apt. 383
+Lake Dylanfort, DE 79544",0636175428,706823
+CUST068,Joseph Taylor,"83799 Teresa Cliff Suite 414
+Travisville, IL 92966",0846004684,275365
+CUST069,Kendra Collins,"963 John Lake
+Reedmouth, HI 17330",0133826717,667565
+CUST070,Douglas Zavala,"032 Cristian Pines Suite 067
+Lambertland, FL 22705",0697451786,783105
+CUST071,Andrea Buchanan,"597 Bennett Walk
+Port Hollymouth, CT 73522",0169042514,154896
+CUST072,Dakota Burke,"8034 Ashley Via Suite 266
+Martinezmouth, PW 31069",0849689484,753153
+CUST073,Amber Myers,"Unit 0879 Box 1239
+DPO AA 31427",0744403907,421006
+CUST074,Mr. Michael Riley,"691 Moore Knolls Suite 641
+Port Kevin, CA 26111",0449027275,336562
+CUST075,Jason Patterson,"139 Lisa Loop Apt. 021
+Lake Kevin, AZ 56355",0950556645,936935
+CUST076,Linda Hernandez,"13356 Padilla Tunnel Suite 316
+Castillobury, NE 80496",0433412127,860658
+CUST077,Benjamin Gallegos,"2708 Ralph Fort
+Lake Jennifer, MS 22597",0605015720,895284
+CUST078,James Miranda,"96188 Tran Creek
+Arnoldland, IA 28643",0505111457,712483
+CUST079,Emma Roberts,"8042 Shelly Key
+East Danielstad, PA 39214",0250240361,799193
+CUST080,Joseph Hickman,"65640 Isaiah Pike
+Port Jesse, GU 38206",0677213642,673601
+CUST081,Nicole Middleton,"96332 Bates Parkways Suite 596
+Jasonside, WA 42525",0614219518,434133
+CUST082,Stacy Juarez,"7102 Gonzalez Mission
+Arielshire, NM 06262",0701738666,373332
+CUST083,Alison Schultz,"517 Emily Villages
+Samueltown, MO 85171",0428313302,575490
+CUST084,Tyler Elliott DDS,"95780 Stanton Plain Apt. 918
+Williamstown, GA 83611",0756442786,363762
+CUST085,Jason Miller,"29899 Molly Wall
+Heatherstad, KY 85548",0963303181,518867
+CUST086,Kathleen Smith,"16407 Anthony Brooks
+South Clifford, SD 57080",0428938156,606300
+CUST087,Lisa Brooks,"9390 Olson Junctions Apt. 403
+Michaelview, OH 19397",0794540316,913360
+CUST088,Becky Flowers,"04908 Steven Stravenue Apt. 196
+Copelandland, NE 97924",0537366372,583621
+CUST089,Frank Lewis,"4152 Rebecca Cliff
+Gregoryberg, OH 44932",0536748021,855625
+CUST090,Peter Hopkins,"820 Tanya Street Suite 151
+North Maryport, CO 45626",0998985645,482729
+CUST091,George Miller,"5292 Sarah River Suite 163
+Port Michelleburgh, GA 42038",0488359757,710346
+CUST092,Robert Dominguez,"7416 Myers Rue Suite 138
+Josephberg, CA 92904",0138651801,765596
+CUST093,Nicole Lee,"718 Carolyn Radial Apt. 177
+South Donna, SC 34974",0484947145,143052
+CUST094,Nicholas Jones,"0961 Lee Hills Suite 138
+East Carol, FL 15495",0183558126,252657
+CUST095,Paul Martin,"003 Rhonda Land Suite 646
+Port Maria, MD 03748",0540841211,684819
+CUST096,Erica Wheeler,"6916 Bradley Shoals
+East Williamstad, WA 05042",0890970755,490629
+CUST097,Kyle Hendrix,"535 Teresa Club
+Robertsland, NV 06732",0968112746,505387
+CUST098,Alicia Smith,"110 Chelsea Glens Apt. 094
+Richardmouth, AS 50832",0569198167,236801
+CUST099,Christopher Roth,"11561 King Fields
+East Connieview, VI 43127",0605400829,179843
+CUST100,Sarah Blanchard,"74008 Fleming Motorway Apt. 557
+Francisland, TN 26363",0488115534,285725

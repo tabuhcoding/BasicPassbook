@@ -1,0 +1,62 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/regulation">Back</a>
+<h2 class="d-flex justify-content-center">Thay đổi quy định</h2>
+<div class="menu">
+    <form method="post" action="/regulation/term-information">
+        <div class="row align-items-start">
+            <div class="column">
+                <div class="row align-items-start dropdown">
+                    <label for="typeTerm">Type of term</label>
+                    <select name="term" class="form-control" id="term">
+                        {{#each termData}}
+                            <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="row align-items-start">
+                    <label for="interestRate">The new interest rate</label>
+                    <input name="interestRate" type="text" class="form-control" placeholder="Enter new interest rate" aria-label="interestRate" id="interestRate" 
+                        aria-describedby="basic-addon1">
+                </div>         
+            </div>
+
+            <div class="column">
+                <div class="row align-items-start">
+                    <label for="minimumDeposit">The minimum deposit</label>
+                    <input name="minimumDeposit" type="text" class="form-control" placeholder="Enter new minimum deposit" aria-label="minimumDeposit" id="minimumDeposit" 
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="row align-items-start">
+                    <label for="minimumTime">The minimum saving time deposit</label>
+                    <input name="minimumTime" type="text" class="form-control" placeholder="Enter new minimum time" aria-label="minimumTime" id="minimumTime" 
+                        aria-describedby="basic-addon1">
+                </div>
+                {{#if errorMessage}}
+                    <div class="col-12 text-danger d-flex justify-content-center" id="form-message">{{errorMessage}}</div>
+                {{/if}}
+                <div>
+                    <button type="submit" class="btn btn-success">Change</button> 
+                </div>
+            </div>
+    </form>
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>

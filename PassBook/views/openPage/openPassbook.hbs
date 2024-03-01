@@ -1,0 +1,104 @@
+<h1 class="d-flex justify-content-center">AKASHIC BANKING</h1>
+
+<a href="/">Back</a>
+<h2 class="d-flex justify-content-center">Mở sổ tiết kiệm</h2>
+
+<div class="menu">
+    <form method="post" action="/openPassbook">
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Passbook ID</span>
+                    <input name="passbookID" type="text" class="form-control" placeholder="Passbook ID"
+                        aria-label="Passbook ID" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="dropdown">
+                    <label for="typePassbook">Type of passbook</label>
+                    <select name="term" class="form-control" id="term">
+                        <option value="Demand">Demand</option>
+                        {{#each termData}}
+                            <option value="{{this}}">{{this}}</option>
+                        {{/each}}                    
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 align-items-start">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Fullname</span>
+                    <input name="fullname" type="text" class="form-control" placeholder="Fullname" aria-label="Fullname"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Customer ID</span>
+                    <input name="customerID" type="text" class="form-control" placeholder="Customer ID"
+                        aria-label="Customer ID" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 align-items-start">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Address</span>
+                    <input name="address" type="text" class="form-control" placeholder="Address" aria-label="Address"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group mb-3">
+                    <label for="defaultDate" class="input-group-text" >Start date</label>
+                    <input name="defaultDate" type="date" class="form-control" placeholder="Start date"
+                        aria-label="Start date" aria-describedby="basic-addon1" id="defaultDate">
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 align-items-start">
+            <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Amount of money</span>
+                    <input name="amount" type="number" class="form-control" placeholder="" aria-label=""
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+            {{#if errorMessage}}
+                <div class="col-12 text-danger d-flex justify-content-center" id="form-message">{{errorMessage}}</div>
+            {{/if}}
+
+        </div>
+    </form>
+</div>
+
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1 {
+        font-weight: bold;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
+<script>
+  // Tạo một đối tượng Date mới đại diện cho thời gian hiện tại
+  var currentDate = new Date();
+
+  // Lấy ngày, tháng và năm từ đối tượng Date
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1; // Tháng bắt đầu từ 0, nên cần cộng thêm 1
+  var year = currentDate.getFullYear();
+
+  // Format ngày tháng năm thành chuỗi YYYY-MM-DD (định dạng yêu cầu cho input type="date")
+  var formattedDate = year + '-' + (month < 10 ? '0' + month : month) + '-' + (day < 10 ? '0' + day : day);
+
+  // Đặt giá trị mặc định cho input type="date"
+  document.getElementById('defaultDate').value = formattedDate;
+</script>
